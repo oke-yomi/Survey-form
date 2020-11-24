@@ -1,4 +1,5 @@
 # Survey-form
 
-Freecodecamp.com
-Responsive Web Design Projects - Build a Survey Form
+## Freecodecamp.com 
+## Project 2
+Responsive Web Design Projects - Build a Survey Form (HTML and CSS)
