@@ -1,0 +1,173 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.topic  {
+  padding: 0 15px;
+  text-align: center;
+  color: #f10d52;
+}
+
+#title {
+  display: block;
+  margin: 10px auto 0;
+}
+
+#description {
+  display: block;
+ font-style: italic;
+ font-size: 15px;
+ margin: 10px auto 0; 
+}
+
+form {
+  background: rgba(228, 182, 207, 0.85);
+  width: 100%;
+  display: block;
+  padding: 30px;
+}
+
+#name-label, #email-label, #number-label, .result {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 5px 3px;
+  display: block;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  height: 35px;
+  padding: 6px 12px;
+}
+
+#gender, #category {
+  display: inline-block;
+  margin: 0 7px 0 15px;
+  min-height: 2px;
+}
+
+.options {
+  display: block; 
+}
+
+#dropdown {
+  font-size: 15px;
+}
+
+textarea {
+  display: block;
+  resize: vertical;
+  max-height: 150px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 6px 12px;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 4px rgba(0, 0, 255, 0.5);
+  border: 1px solid rgb(0, 0, 255);
+}
+
+
+::placeholder {
+  font-size: 14px;
+  color: #afadad;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #afadad;
+}
+
+::-ms-input-placeholder {
+  color: #afadad;
+}
+
+button {
+  display: block;
+  width: 50%;
+  background: #dddddd;
+  margin: 20px auto 0;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: #f10d52;
+}
+
+@media screen and (min-width: 1000px) {
+  #title {
+    font-size: 65px;
+  }
+  
+  #description {
+   font-size: 28px;
+  }
+
+  form {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+
+  #name-label, #email-label, #number-label, .result {
+    margin: 25px 5px 7px;
+    font-size: 25px;
+  }
+
+  .form-control {
+    height: 55px;
+    padding: 6px 20px;
+  }
+
+  .options {
+    font-size: 21px;
+  }
+  
+  #gender, #category {
+    min-height: 10px;
+  }
+
+  #dropdown {
+    font-size: 21px;
+  }
+
+  textarea {
+    resize: horizontal;
+    max-width: 80%;
+    padding: 15px;
+  }
+
+  ::placeholder {
+    font-size: 21px;
+  }
+
+  button {
+    margin: 45px auto 10px;
+    height: 60px;
+    padding: 10px 15px;
+    font-size: 30px;
+  }
+}

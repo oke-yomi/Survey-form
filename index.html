@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title" class="topic">Frenz Online Survey Form</h1>
+    <p id="description" class="topic">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <form id="survey-form">
+    <div>
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" class="form-control" required>
+    </div>
+    
+    <div>
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" class="form-control" required>
+    </div>
+    
+    <div>
+      <label for="age" id="number-label">Age(optional):</label>
+      <input type="number" id="number" name="age" placeholder="Age" class="form-control" min="10" max="100">
+    </div>
+    
+    <div>
+      <p class="result">Gender:</p>
+      <label class="options">
+        <input type="radio" id="gender" name="gender" checked>
+        Female
+      </label>
+      <label class="options">
+        <input type="radio" id="gender" name="gender">
+        Male
+      </label>
+      <label class="options">
+        <input type="radio" id="gender" name="gender">
+        Other
+      </label>
+    </div>
+    
+    <div>
+      <p class="result">How frequently do you purchase things from our online store?</p>
+      <select name="purchase" id="dropdown" class="form-control">
+        <option disabled selected value>Select an option</option>
+        <option value="once">Once a month</option>
+        <option value="five">Two to five times a month</option>
+        <option value="frequent">More than five times a month</option>
+        <option value="yearly">Once a year</option>
+        <option value="never">Never</option>
+    </select>
+    </div>
+    
+    <div>
+      <p class="result">Choose a category you buy from:</p>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Female">
+        Female
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Male">
+        Male
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Kiddies">
+        Kiddies
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Sport wears">
+        Sport wears
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Footwears">
+        Footwears
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Accessories">
+        Accessories
+      </label>
+      <label class="options">
+        <input type="checkbox" id="category" name="category" value="Bags and purses">
+        Bags and purses
+      </label>
+    </div>
+    
+    <div>
+      <p class="result">Any suggestions or comments?</p>
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <button type="submit" id="submit">SUBMIT</button>
+
+  </form>
+</body>
+</html>
